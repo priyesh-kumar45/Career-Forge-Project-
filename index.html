@@ -1,0 +1,1085 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="CareerForge - Smart Job and Career Management Platform"
+  >
+
+  <title>CareerForge | Career Management Platform</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- IMPORTANT:
+       style.css is in the same folder as index.html -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- =========================
+       NAVBAR
+  ========================== -->
+
+  <header class="topbar">
+
+    <a class="brand" href="#home">
+      <span class="brand-mark">CF</span>
+
+      <span>
+        Career<span>Forge</span>
+      </span>
+    </a>
+
+    <nav id="nav">
+
+      <a href="#home">Home</a>
+      <a href="#jobs">Jobs</a>
+      <a href="#dashboard">Dashboard</a>
+      <a href="#applications">Applications</a>
+      <a href="#interviews">Interviews</a>
+      <a href="#profile">Profile</a>
+
+    </nav>
+
+    <div class="top-actions">
+
+      <button
+        class="icon-btn"
+        id="themeBtn"
+        title="Toggle dark mode"
+        type="button"
+      >
+        🌙
+      </button>
+
+      <button
+        class="menu-btn"
+        id="menuBtn"
+        type="button"
+        aria-label="Open menu"
+      >
+        ☰
+      </button>
+
+      <button
+        class="primary small"
+        id="openProfileBtn"
+        type="button"
+      >
+        My Profile
+      </button>
+
+    </div>
+
+  </header>
+
+
+  <main>
+
+    <!-- =========================
+         HERO
+    ========================== -->
+
+    <section class="hero" id="home">
+
+      <div class="hero-copy">
+
+        <p class="eyebrow">
+          YOUR CAREER, ORGANIZED
+        </p>
+
+        <h1>
+          Build your career.
+          <br>
+          <span>Track your growth.</span>
+        </h1>
+
+        <p class="hero-text">
+          Find opportunities, manage applications,
+          prepare for interviews, and keep your
+          career progress in one powerful workspace.
+        </p>
+
+        <div class="hero-buttons">
+
+          <a
+            class="primary"
+            href="#jobs"
+          >
+            Explore Jobs →
+          </a>
+
+          <button
+            class="secondary"
+            id="heroAddBtn"
+            type="button"
+          >
+            + Add Application
+          </button>
+
+        </div>
+
+        <div class="trust-row">
+
+          <span>✓ Free to use</span>
+          <span>✓ Local data</span>
+          <span>✓ Fully responsive</span>
+
+        </div>
+
+      </div>
+
+
+      <div class="hero-visual">
+
+        <div class="dashboard-preview">
+
+          <div class="preview-head">
+
+            <span>Career overview</span>
+
+            <span class="live-dot">
+              ● Live
+            </span>
+
+          </div>
+
+
+          <div class="preview-stats">
+
+            <div>
+              <small>Applications</small>
+              <b id="previewApps">0</b>
+            </div>
+
+            <div>
+              <small>Interviews</small>
+              <b id="previewInterviews">0</b>
+            </div>
+
+            <div>
+              <small>Offers</small>
+              <b id="previewOffers">0</b>
+            </div>
+
+          </div>
+
+
+          <div class="mini-chart">
+
+            <div class="bar b1"></div>
+            <div class="bar b2"></div>
+            <div class="bar b3"></div>
+            <div class="bar b4"></div>
+            <div class="bar b5"></div>
+            <div class="bar b6"></div>
+            <div class="bar b7"></div>
+
+          </div>
+
+
+          <div class="preview-task">
+
+            <span>Next interview</span>
+
+            <strong id="previewInterview">
+              No interview scheduled
+            </strong>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         DASHBOARD
+    ========================== -->
+
+    <section
+      class="section"
+      id="dashboard"
+    >
+
+      <div class="section-head">
+
+        <div>
+
+          <p class="eyebrow">
+            OVERVIEW
+          </p>
+
+          <h2>
+            Your career dashboard
+          </h2>
+
+        </div>
+
+        <button
+          class="secondary"
+          id="clearBtn"
+          type="button"
+        >
+          Reset Demo Data
+        </button>
+
+      </div>
+
+
+      <div class="stats-grid">
+
+        <article class="stat-card">
+
+          <div class="stat-icon blue">
+            📨
+          </div>
+
+          <div>
+
+            <span>Applications</span>
+
+            <strong id="statApplications">
+              0
+            </strong>
+
+            <small>
+              Total submitted
+            </small>
+
+          </div>
+
+        </article>
+
+
+        <article class="stat-card">
+
+          <div class="stat-icon purple">
+            🎯
+          </div>
+
+          <div>
+
+            <span>Interviews</span>
+
+            <strong id="statInterviews">
+              0
+            </strong>
+
+            <small>
+              Scheduled / completed
+            </small>
+
+          </div>
+
+        </article>
+
+
+        <article class="stat-card">
+
+          <div class="stat-icon green">
+            🏆
+          </div>
+
+          <div>
+
+            <span>Offers</span>
+
+            <strong id="statOffers">
+              0
+            </strong>
+
+            <small>
+              Opportunities won
+            </small>
+
+          </div>
+
+        </article>
+
+
+        <article class="stat-card">
+
+          <div class="stat-icon orange">
+            ❤️
+          </div>
+
+          <div>
+
+            <span>Saved jobs</span>
+
+            <strong id="statSaved">
+              0
+            </strong>
+
+            <small>
+              Jobs to revisit
+            </small>
+
+          </div>
+
+        </article>
+
+      </div>
+
+
+      <div class="dashboard-grid">
+
+        <article class="panel progress-panel">
+
+          <div class="panel-title">
+
+            <h3>
+              Application pipeline
+            </h3>
+
+            <span id="successRate">
+              0% response
+            </span>
+
+          </div>
+
+
+          <div class="pipeline">
+
+            <div>
+              <span>Applied</span>
+              <b id="pApplied">0</b>
+            </div>
+
+            <div>
+              <span>Screening</span>
+              <b id="pScreening">0</b>
+            </div>
+
+            <div>
+              <span>Interview</span>
+              <b id="pInterview">0</b>
+            </div>
+
+            <div>
+              <span>Offer</span>
+              <b id="pOffer">0</b>
+            </div>
+
+          </div>
+
+
+          <div class="progress-track">
+            <i id="pipelineBar"></i>
+          </div>
+
+        </article>
+
+
+        <article class="panel skills-panel">
+
+          <div class="panel-title">
+
+            <h3>
+              Skills progress
+            </h3>
+
+            <a href="#profile">
+              Edit
+            </a>
+
+          </div>
+
+
+          <div class="skill">
+
+            <span>
+              JavaScript
+              <b>90%</b>
+            </span>
+
+            <div>
+              <i style="width:90%"></i>
+            </div>
+
+          </div>
+
+
+          <div class="skill">
+
+            <span>
+              HTML & CSS
+              <b>95%</b>
+            </span>
+
+            <div>
+              <i style="width:95%"></i>
+            </div>
+
+          </div>
+
+
+          <div class="skill">
+
+            <span>
+              Java
+              <b>78%</b>
+            </span>
+
+            <div>
+              <i style="width:78%"></i>
+            </div>
+
+          </div>
+
+
+          <div class="skill">
+
+            <span>
+              SQL
+              <b>65%</b>
+            </span>
+
+            <div>
+              <i style="width:65%"></i>
+            </div>
+
+          </div>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         JOBS
+    ========================== -->
+
+    <section
+      class="section jobs-section"
+      id="jobs"
+    >
+
+      <div class="section-head">
+
+        <div>
+
+          <p class="eyebrow">
+            OPPORTUNITIES
+          </p>
+
+          <h2>
+            Find your next role
+          </h2>
+
+        </div>
+
+        <button
+          class="secondary"
+          id="showSavedBtn"
+          type="button"
+        >
+          ❤️ Saved Jobs
+        </button>
+
+      </div>
+
+
+      <div class="job-tools">
+
+        <label class="search-box">
+
+          🔎
+
+          <input
+            id="jobSearch"
+            type="search"
+            placeholder="Search job title, company, or skill..."
+            autocomplete="off"
+          >
+
+        </label>
+
+
+        <select id="locationFilter">
+
+          <option value="">
+            All locations
+          </option>
+
+          <option value="Noida">
+            Noida
+          </option>
+
+          <option value="Delhi">
+            Delhi
+          </option>
+
+          <option value="Bengaluru">
+            Bengaluru
+          </option>
+
+          <option value="Remote">
+            Remote
+          </option>
+
+        </select>
+
+
+        <select id="typeFilter">
+
+          <option value="">
+            All types
+          </option>
+
+          <option value="Full-time">
+            Full-time
+          </option>
+
+          <option value="Internship">
+            Internship
+          </option>
+
+          <option value="Remote">
+            Remote
+          </option>
+
+        </select>
+
+      </div>
+
+
+      <div
+        class="job-grid"
+        id="jobGrid"
+      ></div>
+
+    </section>
+
+
+    <!-- =========================
+         APPLICATIONS
+    ========================== -->
+
+    <section
+      class="section"
+      id="applications"
+    >
+
+      <div class="section-head">
+
+        <div>
+
+          <p class="eyebrow">
+            TRACKING
+          </p>
+
+          <h2>
+            My applications
+          </h2>
+
+        </div>
+
+        <button
+          class="primary"
+          id="addAppBtn"
+          type="button"
+        >
+          + Add application
+        </button>
+
+      </div>
+
+
+      <div class="table-wrap">
+
+        <table>
+
+          <thead>
+
+            <tr>
+              <th>Company</th>
+              <th>Role</th>
+              <th>Location</th>
+              <th>Date</th>
+              <th>Status</th>
+              <th>Action</th>
+            </tr>
+
+          </thead>
+
+          <tbody id="applicationTable"></tbody>
+
+        </table>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         INTERVIEWS
+    ========================== -->
+
+    <section
+      class="section"
+      id="interviews"
+    >
+
+      <div class="section-head">
+
+        <div>
+
+          <p class="eyebrow">
+            UPCOMING
+          </p>
+
+          <h2>
+            Interview schedule
+          </h2>
+
+        </div>
+
+        <button
+          class="primary"
+          id="addInterviewBtn"
+          type="button"
+        >
+          + Schedule interview
+        </button>
+
+      </div>
+
+
+      <div
+        class="interview-grid"
+        id="interviewGrid"
+      ></div>
+
+    </section>
+
+
+    <!-- =========================
+         PROFILE
+    ========================== -->
+
+    <section
+      class="section profile-section"
+      id="profile"
+    >
+
+      <div class="section-head">
+
+        <div>
+
+          <p class="eyebrow">
+            PROFILE
+          </p>
+
+          <h2>
+            Your professional profile
+          </h2>
+
+        </div>
+
+        <button
+          class="primary"
+          id="saveProfileBtn"
+          type="button"
+        >
+          Save profile
+        </button>
+
+      </div>
+
+
+      <div class="profile-layout">
+
+        <article class="profile-card">
+
+          <div class="profile-cover"></div>
+
+          <div class="profile-body">
+
+            <!-- YOUR ACTUAL IMAGE PATH -->
+            <img
+              src="images/profile.svg"
+              class="avatar"
+              alt="CareerForge profile"
+            >
+
+            <h3 id="profileName">
+              Alex Morgan
+            </h3>
+
+            <p id="profileRole">
+              Frontend Developer
+            </p>
+
+            <div class="profile-links">
+
+              <span id="profileLocation">
+                📍 Noida, India
+              </span>
+
+              <span>
+                ✉ careerforge@example.com
+              </span>
+
+            </div>
+
+          </div>
+
+        </article>
+
+
+        <article class="panel profile-form">
+
+          <label>
+            Full name
+
+            <input
+              id="nameInput"
+              type="text"
+              value="Alex Morgan"
+              placeholder="Enter your name"
+            >
+
+          </label>
+
+
+          <label>
+            Target role
+
+            <input
+              id="roleInput"
+              type="text"
+              value="Frontend Developer"
+              placeholder="Enter target role"
+            >
+
+          </label>
+
+
+          <label>
+            Location
+
+            <input
+              id="locationInput"
+              type="text"
+              value="Noida, India"
+              placeholder="Enter location"
+            >
+
+          </label>
+
+
+          <label>
+            About
+
+            <textarea
+              id="aboutInput"
+              placeholder="Write something about yourself..."
+            >Frontend developer focused on building accessible, responsive and user-friendly web applications.</textarea>
+
+          </label>
+
+        </article>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- =========================
+       FOOTER
+  ========================== -->
+
+  <footer>
+
+    <div class="footer-brand">
+
+      <span class="brand-mark">
+        CF
+      </span>
+
+      <strong>
+        CareerForge
+      </strong>
+
+    </div>
+
+    <p>
+      Smart career management, built with HTML, CSS & JavaScript.
+    </p>
+
+    <p>
+      © 2026 CareerForge
+    </p>
+
+  </footer>
+
+
+  <!-- =========================
+       APPLICATION MODAL
+  ========================== -->
+
+  <div
+    class="modal"
+    id="appModal"
+  >
+
+    <div class="modal-box">
+
+      <button
+        class="close"
+        data-close
+        type="button"
+      >
+        ×
+      </button>
+
+      <h2>
+        Add application
+      </h2>
+
+      <form id="appForm">
+
+        <label>
+          Company
+
+          <input
+            name="company"
+            required
+            placeholder="e.g. Infosys"
+          >
+
+        </label>
+
+
+        <label>
+          Job title
+
+          <input
+            name="role"
+            required
+            placeholder="e.g. Java Developer"
+          >
+
+        </label>
+
+
+        <label>
+          Location
+
+          <input
+            name="location"
+            required
+            placeholder="Noida / Remote"
+          >
+
+        </label>
+
+
+        <label>
+          Date applied
+
+          <input
+            name="date"
+            type="date"
+            required
+          >
+
+        </label>
+
+
+        <label>
+          Status
+
+          <select name="status">
+
+            <option value="Applied">
+              Applied
+            </option>
+
+            <option value="Screening">
+              Screening
+            </option>
+
+            <option value="Interview">
+              Interview
+            </option>
+
+            <option value="Offer">
+              Offer
+            </option>
+
+            <option value="Rejected">
+              Rejected
+            </option>
+
+          </select>
+
+        </label>
+
+
+        <button
+          class="primary full"
+          type="submit"
+        >
+          Save application
+        </button>
+
+      </form>
+
+    </div>
+
+  </div>
+
+
+  <!-- =========================
+       INTERVIEW MODAL
+  ========================== -->
+
+  <div
+    class="modal"
+    id="interviewModal"
+  >
+
+    <div class="modal-box">
+
+      <button
+        class="close"
+        data-close
+        type="button"
+      >
+        ×
+      </button>
+
+      <h2>
+        Schedule interview
+      </h2>
+
+      <form id="interviewForm">
+
+        <label>
+          Company
+
+          <input
+            name="company"
+            required
+            placeholder="Company"
+          >
+
+        </label>
+
+
+        <label>
+          Role
+
+          <input
+            name="role"
+            required
+            placeholder="Role"
+          >
+
+        </label>
+
+
+        <label>
+          Date
+
+          <input
+            name="date"
+            type="date"
+            required
+          >
+
+        </label>
+
+
+        <label>
+          Time
+
+          <input
+            name="time"
+            type="time"
+            required
+          >
+
+        </label>
+
+
+        <label>
+          Type
+
+          <select name="type">
+
+            <option value="Video call">
+              Video call
+            </option>
+
+            <option value="Phone">
+              Phone
+            </option>
+
+            <option value="In person">
+              In person
+            </option>
+
+          </select>
+
+        </label>
+
+
+        <button
+          class="primary full"
+          type="submit"
+        >
+          Schedule interview
+        </button>
+
+      </form>
+
+    </div>
+
+  </div>
+
+
+  <!-- Toast -->
+
+  <div
+    class="toast"
+    id="toast"
+  >
+    Saved successfully ✓
+  </div>
+
+
+  <!-- IMPORTANT:
+       app.js is in the same folder as index.html -->
+  <script src="app.js"></script>
+
+</body>
+</html>
