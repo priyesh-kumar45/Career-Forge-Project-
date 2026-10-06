@@ -1,32 +1,95 @@
-# CareerForge — Smart Job & Career Management Platform
+CareerForge — Smart Job & Career Management Platform
 
-CareerForge is a responsive job and career management web application built with **HTML5, CSS3 and vanilla JavaScript**.
+CareerForge is a modern, responsive Job & Career Management Platform built using HTML5, CSS3, and Vanilla JavaScript.
 
-## Features
-- Job search, filters and saved jobs
-- Application tracker with CRUD-style delete flow
-- Interview scheduler
-- Career dashboard and application pipeline
-- LocalStorage persistence
-- Profile editor
-- Dark/light mode
-- Responsive design
-- Company and career image assets
-- No backend required
+The project helps users discover job opportunities, save interesting jobs, track applications, schedule interviews, monitor career progress, and manage their professional profile — all from one dashboard.
 
-## Run in VS Code
-1. Extract the project.
-2. Open the folder in VS Code.
-3. Open `index.html` with Live Server, or double-click `index.html`.
-4. All data is stored locally in your browser.
+🚀 Live Demo
 
-## Folder structure
-- `index.html`
-- `css/style.css`
-- `js/app.js`
-- `images/companies/`
-- `images/jobs/`
-- `images/profile.svg`
+👉 Live Website:
+CareerForge Live Demo
 
-## Resume technologies
-HTML5 • CSS3 • JavaScript • DOM • LocalStorage • JSON • Responsive Web Design • CRUD concepts
+💻 GitHub Repository
+
+👉 Source Code:
+CareerForge GitHub Repository
+
+✨ Features
+🔎 Job Search & Filtering
+Search jobs by:
+Job title
+Company
+Skills
+Filter jobs by location
+Filter jobs by employment type
+Responsive job cards
+Apply / Track functionality
+❤️ Saved Jobs
+Save jobs for later
+Remove saved jobs
+View all saved jobs
+Saved jobs are stored using LocalStorage
+📋 Application Tracker
+Add new job applications
+Track application status
+Application pipeline:
+Applied
+Screening
+Interview
+Offer
+Rejected
+Delete applications
+Application data persists after page refresh
+🎯 Interview Scheduler
+Schedule interviews
+Add:
+Company
+Role
+Date
+Time
+Interview type
+View upcoming interviews
+Cancel interviews
+📊 Career Dashboard
+
+The dashboard provides an overview of:
+
+Total applications
+Interviews
+Job offers
+Saved jobs
+Application pipeline
+Response rate
+Career progress
+👤 Professional Profile
+
+Users can edit:
+
+Full name
+Target role
+Location
+About section
+
+Profile information is saved using LocalStorage.
+
+🌙 Dark / Light Mode
+Light mode
+Dark mode
+Theme preference saved in LocalStorage
+📱 Responsive Design
+
+CareerForge works across:
+
+💻 Desktop
+💻 Laptop
+📱 Mobile
+📱 Tablet
+🛠️ Technologies Used
+Technology	Purpose
+HTML5	Website structure
+CSS3	Styling & responsive design
+JavaScript	Functionality & interactivity
+DOM Manipulation	Dynamic content
+LocalStorage	Data persistence
+JSON	Data management
+Responsive Web Design	Mobile & desktop support
