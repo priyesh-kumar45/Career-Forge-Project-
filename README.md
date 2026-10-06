@@ -3,16 +3,16 @@ CareerForge — Smart Job & Career Management Platform
 CareerForge is a modern, responsive Job & Career Management Platform built using HTML5, CSS3, and Vanilla JavaScript.
 
 The project helps users discover job opportunities, save interesting jobs, track applications, schedule interviews, monitor career progress, and manage their professional profile — all from one dashboard.
+🔗 Live Demo
 
-🚀 Live Demo
+GitHub Pages:
+https://priyesh-kumar45.github.io/Career-Forge-Project-/
 
-👉 Live Website:
-CareerForge Live Demo
+This will work after you enable GitHub Pages for the repository.
 
 💻 GitHub Repository
 
-👉 Source Code:
-CareerForge GitHub Repository
+https://github.com/priyesh-kumar45/Career-Forge-Project-.git
 
 ✨ Features
 🔎 Job Search & Filtering
